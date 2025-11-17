@@ -6,9 +6,9 @@ jobs:
   Steps-Examples:
     runs-on: ubuntu-latest
     steps:
-      -run: mkdir testmachien
-      -run: uname -a > testmachien/output.txt
-      -run: cat testmachien/output.txt
-      -run: ls -alhR
+      - run: mkdir testmachien
+      - run: uname -a > testmachien/output.txt
+      - run: cat testmachien/output.txt
+      - run: ls -alhR
       
   
