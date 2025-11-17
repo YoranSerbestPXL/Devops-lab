@@ -1,0 +1,22 @@
+name: Uses Examples
+
+on:
+  workflow_dispatch:
+
+jobs:
+  use-actions:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v5.0.1
+
+      - name: Install Python 3.13
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+
+      - name: Run Python script
+        run: python your_script.py
+
+    
